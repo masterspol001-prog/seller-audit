@@ -1,0 +1,19 @@
+{
+  "name": "settleproof",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Amazon settlement reconciliation, fee audit and bookkeeping for sellers",
+  "type": "commonjs",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test tests/*.test.js",
+    "smoke": "node tests/smoke.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  }
+}

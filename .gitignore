@@ -1,0 +1,7 @@
+node_modules/
+data/**
+!data/sample/**
+*.log
+.env
+.DS_Store
+coverage/
