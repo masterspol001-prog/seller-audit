@@ -3,14 +3,16 @@
   "builds": [
     {
       "src": "server/vercel.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "public/**"
-        ]
-      }
+      "use": "@vercel/node"
     }
   ],
+  "functions": {
+    "server/vercel.js": {
+      "includeFiles": [
+        "public/**"
+      ]
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
