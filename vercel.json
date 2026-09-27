@@ -1,22 +1,9 @@
 ﻿{
   "version": 2,
-  "builds": [
-    {
-      "src": "server/vercel.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "functions": {
-    "server/vercel.js": {
-      "includeFiles": [
-        "public/**"
-      ]
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server/vercel.js"
+      "dest": "/server/vercel.js"
     }
   ]
 }
